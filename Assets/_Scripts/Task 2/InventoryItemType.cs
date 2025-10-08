@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class InventoryItemType : MonoBehaviour
+namespace DarkGravityGames.Task2
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public enum InventoryItemType
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Sword,
+        Apple,
+        Bomb
     }
 }
