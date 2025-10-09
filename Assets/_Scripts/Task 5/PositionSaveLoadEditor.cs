@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace DarkGravityGames.Task5
 {
-    [CustomEditor(typeof(PositionSaveLoad))]
+    [CustomEditor(typeof(PositionsSaveLoad))]
     public class PositionSaveLoadEditor : Editor
     {
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
 
-            PositionSaveLoad positionSaveLoad = (PositionSaveLoad)target;
+            PositionsSaveLoad positionSaveLoad = (PositionsSaveLoad)target;
 
             GUILayout.Space(15);
 

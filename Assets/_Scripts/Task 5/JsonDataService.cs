@@ -12,9 +12,14 @@ namespace DarkGravityGames.Task5
             File.WriteAllText(filePath, jsonData);
         }
 
-        public static T LoadData<T>(string filePath)
+        public static T LoadData<T>(string filePath) where T : new()
         {
             filePath = Path.Combine(Application.persistentDataPath, filePath);
+            if (File.Exists(filePath) == false)
+            {
+                return new T();
+            }
+
             string jsonData = File.ReadAllText(filePath);
             T data = JsonUtility.FromJson<T>(jsonData);
 
