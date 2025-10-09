@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
